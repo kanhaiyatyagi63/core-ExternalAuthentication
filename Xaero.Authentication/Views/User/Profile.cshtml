@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model System.Collections.Generic.Dictionary<string, string>
+
+
+<table>
+    <tr>
+        <td>
+            Name
+        </td>
+        <td>
+            Value
+        </td>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@item.Key</td>
+    <td>@item.Value</td>
+</tr>}
+</table>
+
